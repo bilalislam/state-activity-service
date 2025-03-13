@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+
+  state-activity-service:
+    build: ..
+    ports:
+      - "18080:8080"
+      - "18787:8787"
+    restart: always
+    depends_on:
+      - mongodb
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - MONGODB_URI=mongodb://db:27017/state-activity-service
+      - SPRING_DATASOURCE_USERNAME=appuser
+      - SPRING_DATASOURCE_PASSWORD=secret

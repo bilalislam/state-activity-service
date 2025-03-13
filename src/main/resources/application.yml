@@ -1,0 +1,9 @@
+server:
+  port: 8081
+  shutdown: graceful
+spring:
+  application:
+    name: state-activity-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/state-activity-service

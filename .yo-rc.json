@@ -1,0 +1,11 @@
+{
+  "generator-springboot": {
+    "appName": "state-activity-service",
+    "packageName": "com.turknet.stateactivityservice",
+    "databaseType": "mongo",
+    "dbMigrationTool": "none",
+    "features": [],
+    "buildTool": "maven",
+    "packageFolder": "com/turknet/stateactivityservice"
+  }
+}
