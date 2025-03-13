@@ -25,10 +25,8 @@ public class LoggingAspect {
         this.env = env;
     }
 
-
-    @Pointcut(
-            "@within(com.turknet.stateactivityservice.config.logging.Loggable) || "
-                    + "@annotation(com.turknet.stateactivityservice.config.logging.Loggable)")
+    @Pointcut("@within(com.turknet.stateactivityservice.config.logging.Loggable) || "
+            + "@annotation(com.turknet.stateactivityservice.config.logging.Loggable)")
     public void applicationPackagePointcut() {
         // pointcut definition
     }
